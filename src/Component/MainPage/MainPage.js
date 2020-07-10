@@ -53,7 +53,6 @@ class MainPage extends React.Component {
                         </ Roll>
                     </div>
                 </div>
-                <hr/>
                 <SectionCourse/>
                 <hr/>
                 <div className="container-fluid margin-bottom-hung margin-top-hung">
@@ -63,13 +62,13 @@ class MainPage extends React.Component {
                                 <div className="row">
                                     <Golds/>
                                 </div>
-                                <div className="row margin-top-hung">
+                                <div className="row margin-top-hung margin-bottom-hung">
                                     <div className="back">
                                         {/* <Fade top> */}
                                             <h3 className="cent headers">رسالت ما</h3>
                                         {/* </Fade> */}
                                         {/* <Fade right> */}
-                                            <h6 className="cent mb-5 col-sm-12 col-sm-push-2 col-md-6 col-md-push-3" style={{lineHeight:'1cm',color:'white'}}>مکاک سعی دارد با ایجاد فضای نوآوری و تفکر خلاق در بین دانشجویان و پرورش ایده‌های خلاقانه و کارآفرینانه در دانشگاه ها و کم کردن ریسک دوره ابتدایی شروع کسب و کار به تجاری سازی ایده‌ها کمک کند</h6>
+                                            <h6 className="cent" style={{lineHeight:'1cm',color:'white',fontSize:'1.2rem',width:'40%'}}>مکاک سعی دارد با ایجاد فضای نوآوری و تفکر خلاق در بین دانشجویان و پرورش ایده‌های خلاقانه و کارآفرینانه در دانشگاه ها و کم کردن ریسک دوره ابتدایی شروع کسب و کار به تجاری سازی ایده‌ها کمک کند</h6>
                                         {/* </Fade> */}
                                     </div>
                                     <div className="row cent margin-top-hung">
@@ -77,7 +76,7 @@ class MainPage extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="row mb-5 exp">
+                            <div className="row mb-5 exp margin-top-hung">
                                 <div className="col-sm-12 col-md-8 col-md-push-2">
                                     <Fade right>
                                     <h4 className="text-center mt-4" style={{color:"rgba(82, 23, 81,1)"}}>در حال حاضر مساله اساسی برای تجاری سازی ایده چیست؟</h4>
@@ -90,12 +89,9 @@ class MainPage extends React.Component {
                             </div>
                         </div>
                     </div>
-               
-                
                     <div>
                         <Footer/>
                     </div>
-                
                 </div>
             </div> 
         )

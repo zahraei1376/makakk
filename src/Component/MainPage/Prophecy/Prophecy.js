@@ -1,5 +1,5 @@
 import React from 'react';
-import './Prophecy.css';
+import './Prophecy.scss';
 import worshop from '../../../asset/img/workShop.png';
 import workPlace from '../../../asset/img/workPlace.png';
 import WorkMarket from '../../../asset/img/workMarket.png';
@@ -51,7 +51,7 @@ class Prophecy extends React.Component{
     render() {
         return(
             <Fade top >
-                <div className="part1 h col-sm-12 col-sm-push-1 col-md-3 col-md-push-1 mb-5">
+                <div className="part1 h col-sm-12 col-sm-push-1 col-md-3 col-md-push-1 margin-top-hung">
                     <img src={this.props.img}  style={{width:'150px',height:'150px',marginBottom:'40px'}}/>
                     <h5 style={{marginBottom:'40px',color:"#521751"}}>{this.props.type}</h5>
                 </div>

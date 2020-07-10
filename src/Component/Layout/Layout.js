@@ -49,10 +49,11 @@ const Layout = () => (
                 <Route path="/getCourses" exact component={getCourses}/>
                 <Route path="/UploadFile" exact component={UploadFile}/>
                 <Route path="/AdminPanel" exact component={AdminPanel}/>
-                <Route 
+                <Route path="/getFilePage" exact component={GetFilePage}/>
+                {/* <Route 
                     path="/getFilePage" 
                     render={(props) => <GetFilePage {...props} CourseName={props.CourseName}/>} 
-                />
+                /> */}
             </Suspense>
         </Switch>
     </div>

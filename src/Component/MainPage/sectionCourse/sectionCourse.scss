@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
 
     &__cards{
         display: flex;
@@ -42,18 +43,18 @@
                 transform: rotateY(180deg);
     
                 &-1 {
-                    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+                    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
                 }
     
                 &-2 {
-                    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+                    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
                 }
     
                 &-3 {
-                    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+                    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
                 }
                 &-4 {
-                    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+                    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
                 }
             }
         }
@@ -93,12 +94,12 @@
             
             &--1 {
                 background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark), 
-                url(../../../asset/img/Csharp.jpg);
+                url(../../../asset/img/Csharpp.jpg);
             }
     
             &--2 {
                 background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark), 
-                url(../../../asset/img/CPlus.jpg);
+                url(../../../asset/img/CPluss.jpg);
             }
     
             &--3 {
@@ -142,7 +143,16 @@
         &__card{
             margin: 2rem auto;
 
+            &__picture{
+                // border-bottom-left-radius: 0;
+                // border-bottom-right-radius: 0; 
+                border-radius: 0;
+            }
+
             &__side {
+                border-radius: 0;
+                // border-bottom-left-radius: 0;
+                // border-bottom-right-radius: 0;
                 &--back{
                     transform: rotateY(0);
                     display: none;

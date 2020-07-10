@@ -17,7 +17,10 @@ body{
     background-size: cover;
     background-position: center;
     transform: skewY(-7deg);
-    // margin-top: -10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     & > * {
         transform: skewY(7deg);
@@ -140,7 +143,7 @@ body{
     color: white;
     padding: 20px;
     margin-bottom: 17px;
-    font-size: 22px;
+    font-size: 2rem;
     // border-bottom: 4px solid #521751;
     // border-bottom: 4px solid white;
 }

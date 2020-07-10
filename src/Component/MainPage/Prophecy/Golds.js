@@ -1,5 +1,5 @@
 import React from 'react';
-import './Prophecy.css';
+import './Prophecy.scss';
 import {Animated} from "react-animated-css";
 import icon1 from '../../../asset/img/icon1.png';
 import icon2 from '../../../asset/img/icon2.png';

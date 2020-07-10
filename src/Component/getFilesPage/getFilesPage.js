@@ -3,6 +3,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import './getFilesPage.css';
 import download from '../../asset/img/download.png';
+import { withRouter } from 'react-router-dom';
 // import PSPDFKit from "pspdfkit";
 // import { Document } from 'react-pdf'
 // import { PDFReader } from 'react-read-pdf';
@@ -25,7 +26,7 @@ class getFiles extends React.Component{
             files:[],
             message:"",
             name:"",
-            CourseName:this.props.state.CourseName,
+            // CourseName:this.props.match.state.CourseName,
             handleC:false,
             handleJ:false,
             handleP:false,
@@ -35,7 +36,8 @@ class getFiles extends React.Component{
     }
     componentDidMount(){
         var data = {
-            CourseName:this.state.CourseName
+            // CourseName:this.state.CourseName
+            CourseName:this.props.match.state.CourseName
         }
         fetch('http://localhost:8000/getFilePage', {
             method: "POST",
@@ -243,4 +245,4 @@ class getFiles extends React.Component{
     }
 }
 
-export default getFiles;
+export default withRouter(getFiles);

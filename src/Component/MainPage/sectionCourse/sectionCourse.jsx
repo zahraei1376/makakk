@@ -4,24 +4,20 @@ import { connect } from 'react-redux';
 import './sectionCourse.scss';
 import { Link } from 'react-router-dom';
 // ////////////////
-import Python from '../../../asset/img/python.png';
-import CPlus from '../../../asset/img/CPlus.jpg';
-import Csharp from '../../../asset/img/Csharp.jpg';
-import Java from '../../../asset/img/java.png';
 
 const SectionCourse =(props) =>{
     return(
-        <div className="container-fluid sectionCourses">
+        <div className="container-fluid sectionCourses margin-bottom-hung">
             {/* <div className='sectionCourses__container' className="cent"> */}
-                <div className="row">
+                <div className="row margin-bottom-small">
                     <h2 className="cent mb-2 sectionCourses__title">دانلود فایل ها </h2>
                 </div>
-                <div className="row">
+                <div className="row margin-bottom-small">
                     {!props.currentUser ? 
                     <div className="col-sm-12">
                         <p className="cent mb-4" style={{color:"red"}}>برای دریافت فایل ها باید ثبت نام کنید</p>
                     </div>:""}
-                    <br/>
+                    {/* <br/> */}
                 </div>
                 <div className="row">
                     <Fade left>
@@ -49,11 +45,11 @@ const SectionCourse =(props) =>{
                                 </div>
                                 <div class="sectionCourses__card__side sectionCourses__card__side--back sectionCourses__card__side--back-2">
                                     <div class="sectionCourses__card__cta">
-                                        <Link to="/getFilePage" state={{CourseName:"C#"}} className='sectionCourses__btn'>دانلود</Link>
+                                        <Link to="/getFilePage" state={{CourseName:"C++"}} className='sectionCourses__btn'>دانلود</Link>
                                     </div>
                                 </div>
                                 <div class="sectionCourses__card__download">
-                                    <Link to="/getFilePage" state={{CourseName:"C#"}} className='sectionCourses__card__button'>دانلود</Link>
+                                    <Link to="/getFilePage" state={{CourseName:"C++"}} className='sectionCourses__card__button'>دانلود</Link>
                                 </div>
                             </div>
                             <div class="sectionCourses__card">
@@ -64,11 +60,11 @@ const SectionCourse =(props) =>{
                                 </div>
                                 <div class="sectionCourses__card__side sectionCourses__card__side--back sectionCourses__card__side--back-3">
                                     <div class="sectionCourses__card__cta">
-                                        <Link to="/getFilePage" state={{CourseName:"C#"}} className='sectionCourses__btn'>دانلود</Link>
+                                        <Link to="/getFilePage" state={{CourseName:"Java"}} className='sectionCourses__btn'>دانلود</Link>
                                     </div>
                                 </div>
                                 <div class="sectionCourses__card__download">
-                                    <Link to="/getFilePage" state={{CourseName:"C++"}} className='sectionCourses__card__button'>دانلود</Link>
+                                    <Link to="/getFilePage" state={{CourseName:"Java"}} className='sectionCourses__card__button'>دانلود</Link>
                                 </div>
                             </div>
                             <div class="sectionCourses__card">
@@ -79,7 +75,7 @@ const SectionCourse =(props) =>{
                                 </div>
                                 <div class="sectionCourses__card__side sectionCourses__card__side--back sectionCourses__card__side--back-4">
                                     <div class="sectionCourses__card__cta">
-                                        <Link to="/getFilePage" state={{CourseName:"Java"}} className='sectionCourses__btn'>دانلود</Link>
+                                        <Link to="/getFilePage" state={{CourseName:"Python"}} className='sectionCourses__btn'>دانلود</Link>
                                     </div>
                                 </div>
                                 <div class="sectionCourses__card__download">
