@@ -1,5 +1,5 @@
 import  React from 'react';
-import  './Register-Login.css';
+import  './Register-Login.scss';
 // import Spinner from '../UI/spinner/spinner';
 import Login from './login/login';
 import Register from './register/register';
@@ -24,20 +24,15 @@ class RegLog extends React.Component{
     render() {
         return(
             <div className="root-container">
-                <div className="col-sm-12 col-md-3">
-                    <div className="box-controller">
-                        <div className={"controller" + (this.state.isLoginOpen ? " selected-controller" : "")} onClick={this.showLoginBox.bind(this)}>
-                            ورود
-                        </div>
-                        <div className={"controller" + (this.state.isRegisterOpen ? " selected-controller" : "")} onClick={this.showRegisterBox.bind(this)}>
-                            ثبت نام
-                        </div>
+                <div className="box-controller">
+                    <div className={"controller" + (this.state.isLoginOpen ? " selected-controller" : "")} onClick={this.showLoginBox.bind(this)}>
+                        ورود
+                    </div>
+                    <div className={"controller" + (this.state.isRegisterOpen ? " selected-controller" : "")} onClick={this.showRegisterBox.bind(this)}>
+                        ثبت نام
                     </div>
                 </div>
-                <div className="col-sm-12 col-md-9 box-container">
-                    {/* <div>
-                        <h5 className="cent" style={{color:"green"}}>{this.state.welcomeMessage}</h5>
-                    </div> */}
+                <div className="box-container">
                     {this.state.isLoginOpen && <Login/>}
                     {this.state.isRegisterOpen && <Register/>}
                 </div>
