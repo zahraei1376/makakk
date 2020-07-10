@@ -1,0 +1,10 @@
+.discription{
+    border: 1px solid #4e555b;
+    padding: 10px;
+    margin-bottom: 20px;
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
+}
+.fullname{
+    border-bottom: 2px solid #521751;
+}

@@ -1,0 +1,55 @@
+.teacher{
+    margin: 0;
+    /* background-image: url('../../asset//img/back.jpg');
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain; */
+}
+.teacher .teacher-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+
+}
+.teacher .textbox{
+    width: 100%;
+    /* overflow: hidden; */
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #521751;
+
+}
+.teacher .textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+.teacher .textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin:0 10px;
+    /* text-align: center; */
+}
+.teacher .btn{
+    width: 100%;
+    background: none;
+    border: 2px solid #521751;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+}

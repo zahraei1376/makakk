@@ -1,0 +1,16 @@
+.clr{
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+}
+.borderSturtup{
+    border: 2px solid white;
+    margin-left: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.exp{
+    margin: 20px;
+    pading:20px;
+    border: 1px solid #521751;
+}

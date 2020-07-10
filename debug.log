@@ -1,0 +1,3 @@
+[1108/195025.295:ERROR:process_info.cc(359)] UncheckedAllocate
+[1108/195211.268:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: The operation completed successfully. (0x0)
+[1108/201252.968:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value 6d6212e79076404eab3c0bbb8906e7ae

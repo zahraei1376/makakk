@@ -1,0 +1,14 @@
+@import './variables';
+
+@mixin cent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin shirink {
+    top: 0;
+    color: $color-dark-light-2;
+    font-size: .9rem;
+}

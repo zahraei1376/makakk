@@ -1,0 +1,70 @@
+{
+  "name": "makakkk",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.3.1",
+    "bootstrap-less": "^3.3.8",
+    "faker": "^4.1.0",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.14.1",
+    "pdf-viewer-reactjs": "^2.0.0",
+    "pdfreader": "^1.0.6",
+    "popper.js": "^1.16.0",
+    "prop-types": "^15.7.2",
+    "pspdfkit": "^2019.5.3",
+    "pure-react-carousel": "^1.23.2",
+    "react": "^16.9.0",
+    "react-animated-css": "^1.2.1",
+    "react-awesome-slider": "^1.0.1",
+    "react-bootstrap": "^1.0.0-beta.12",
+    "react-bootstrap-sweetalert": "^5.1.7",
+    "react-dom": "^16.9.0",
+    "react-gesture-gallery": "^1.1.0",
+    "react-gesture-responder": "^2.1.0",
+    "react-js-pagination": "^3.0.2",
+    "react-paginate": "^6.3.2",
+    "react-pdf": "^4.1.0",
+    "react-read-pdf": "^2.0.9",
+    "react-redux": "^7.2.0",
+    "react-responsive-carousel": "^3.1.50",
+    "react-responsive-navbar": "^1.0.11",
+    "react-reveal": "^1.2.2",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.1.0",
+    "react-simple-image-slider": "^1.0.2",
+    "react-slick": "^0.25.2",
+    "react-swift-slider": "^6.4.0",
+    "react-widgets": "^4.4.11",
+    "reactstrap": "^8.1.1",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "save": "^2.4.0",
+    "semantic-ui-react": "^0.88.1",
+    "text-slider": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
