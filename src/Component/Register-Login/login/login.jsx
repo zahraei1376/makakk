@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { fetchUserStartAsync } from '../../../redux/user/user.actions';
+import { Redirect } from 'react-router-dom';
 import {connect } from 'react-redux';
 // //////////////////
 import './login.scss';
@@ -17,12 +18,13 @@ class Login extends React.Component{
     
     submitLogin = (e)=>{
         e.preventDefault();
-        if((this.state.UsernameLog !="" && this.state.UsernameLog > 5 ) && (this.state.PassLog!="" && this.state.PassLog > 5)){
+        if((this.state.UsernameLog !="" && this.state.UsernameLog.length >= 5 ) && (this.state.PassLog!="" && this.state.PassLog.length >= 5)){
             const data = {
                 username: this.state.UsernameLog,
                 password:this.state.PassLog,
             }
             const {setCurrentUser} = this.props;
+            // console.log(data);
             setCurrentUser(data);
         }
         else{
@@ -39,7 +41,16 @@ class Login extends React.Component{
     handlePass = (e)=>{
         this.setState({PassLog: e.target.value});
     }
+
+    
     render(){
+
+        if(this.props.currentUser){
+            return <Redirect to={{
+                pathname: '/'
+            }}/>
+        }
+
         return(
             <div>
                 <div className="login">

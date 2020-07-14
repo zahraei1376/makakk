@@ -59,15 +59,15 @@
         font-size: 1rem;
 
         &:focus{
-            border-bottom: 2px solid $color-primary;
+            border-bottom: 2px solid $color-primary2-dark;
         }
 
         &:focus:invalid{
-            border-bottom: 2px solid $color-primary-light;
+            border-bottom: 2px solid $color-primary2-dark;
         }
 
         &:invalid{
-            border-bottom: 2px solid $color-primary-light;
+            border-bottom: 2px solid $color-primary2-dark;
         }
 
         &:valid{

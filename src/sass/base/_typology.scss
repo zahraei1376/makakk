@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+
+.secondary-header{
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 3rem;
+    // display: flex;
+    // justify-content: center;
+    transition: all .2s;
+
+    @media only screen and (max-width: 37.5em){
+        font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: 56.25em) {
+        font-size: 2rem;
+    }
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba(#000, .2);
+    }
+}

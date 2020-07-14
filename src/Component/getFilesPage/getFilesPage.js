@@ -1,23 +1,16 @@
 import React from 'react';
-// import axios from 'axios';
 import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 import './getFilesPage.css';
 import download from '../../asset/img/download.png';
 import { withRouter } from 'react-router-dom';
-// import PSPDFKit from "pspdfkit";
-// import { Document } from 'react-pdf'
-// import { PDFReader } from 'react-read-pdf';
-// var pdfreader = require("pdfreader");
-// import { async } from 'q';
-// var fs = require("fs");
 
-// import ReaderPdf from './reader-pdf';
-let token;
-if(sessionStorage.getItem('UserLogin')) {
-    token=JSON.parse(sessionStorage.getItem('UserLogin')).token
-}else{
-    token=false;
-}
+// let token;
+// if(sessionStorage.getItem('UserLogin')) {
+//     token=JSON.parse(sessionStorage.getItem('UserLogin')).token
+// }else{
+//     token=false;
+// }
 
 class getFiles extends React.Component{
     constructor(props){
@@ -37,13 +30,14 @@ class getFiles extends React.Component{
     componentDidMount(){
         var data = {
             // CourseName:this.state.CourseName
-            CourseName:this.props.match.state.CourseName
+            // CourseName:this.props.location.state.CourseName
+            CourseName:this.props.location.state
         }
-        fetch('http://localhost:8000/getFilePage', {
+        fetch('http://localhost:7000/getFilePage', {
             method: "POST",
             headers: {
-                'Authorization': token ? `Bearer ${token} `: '',
-                'Content-Type': 'application/json'
+                // 'Authorization': token ? `Bearer ${token} `: '',
+                // 'Content-Type': 'application/json'
               },
             body:  JSON.stringify(data)
         })
@@ -235,9 +229,12 @@ class getFiles extends React.Component{
                         </ul>
                     </div>
                     <div className="col-sm-12 col-md-6 col-md-push-1 ff">
-                        {token && this.state.files[0] ?<h1 className="cent">فایل های درس {this.state.files[0].nameCours}</h1>:<h1 className="cent">فایل های درس {this.state.CourseName}</h1>}
+                        {/* {token && this.state.files[0] ?<h1 className="cent">فایل های درس {this.state.files[0].nameCours}</h1>:<h1 className="cent">فایل های درس {this.state.CourseName}</h1>}
                         <hr className="mb-5"/>
-                        {token && this.state.files ? table :<Redirect to='/RegLog'/>}
+                        {token && this.state.files ? table :<Redirect to='/RegLog'/>} */}
+                        {this.props.currentUser && this.state.files[0] ?<h1 className="cent">فایل های درس {this.state.files[0].nameCours}</h1>:<h1 className="cent">فایل های درس {this.state.CourseName}</h1>}
+                        <hr className="mb-5"/>
+                        {this.props.currentUser && this.state.files ? table :<Redirect to='/RegLog'/>}
                     </div>
                 </div>
             </div>
@@ -245,4 +242,8 @@ class getFiles extends React.Component{
     }
 }
 
-export default withRouter(getFiles);
+const mapStateToProps = (state) =>({
+    currentUser:state.user.currentUser
+})
+
+export default connect(mapStateToProps)(withRouter(getFiles));

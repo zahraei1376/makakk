@@ -49,11 +49,73 @@ body{
     margin-right: auto;
     color: #a30da1;
 }
+
+.explain{
+
+    width: 100%;
+    display: flex;
+
+    &-side{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__img{
+        background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.3),
+        rgba($color-primary-dark, 0.3)),
+        url(../../asset/img/wshop.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    &__imgCent{
+        width: 23rem;
+        position: absolute;
+        top: 50%;
+        left: 82%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 0 1rem rgba($color: #000000, $alpha: .5);
+
+        @media only screen and (max-width: 56.25em) { 
+            left: 50%;
+        };
+    }
+
+    &__text{
+        line-height: 1cm;
+        text-align: center;
+        padding: 4rem;
+    }
+
+    &__link{
+        width: 15rem;
+        height: 4rem;
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+        color: white;
+        background-color: $color-primary-light;
+        text-align: center;
+        vertical-align: middle;
+        margin-right: 4rem;
+        &:hover{
+            color: white;
+            text-decoration: none;
+            background-color: $color-primary-dark;
+        }
+    }
+}
 .exp{
     border: 1px solid#cecece;
     border-radius: 5px;
     background-color: #fff;
-    margin: 5rem;
+    margin: 5rem auto;
+    width: 68%;
     /* margin-top: 30px;
     text-align: justify; */
     box-shadow: 0 0 10px#ddd;

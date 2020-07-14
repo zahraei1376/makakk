@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const SectionCourse =(props) =>{
     return(
-        <div className="container-fluid sectionCourses margin-bottom-hung">
+        <div className="container-fluid sectionCourses margin-bottom-large">
             {/* <div className='sectionCourses__container' className="cent"> */}
                 <div className="row margin-bottom-small">
                     <h2 className="cent mb-2 sectionCourses__title">دانلود فایل ها </h2>
